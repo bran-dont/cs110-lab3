@@ -1,0 +1,494 @@
+/*
+  Name: Brandon Tran
+  Partner: Saad Umar
+*/
+
+/* Feel free to edit CSS of body if you'd like. We provide you the light gray background color and font family in the body styling */
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
+  background-color: #e6ecf0;
+}
+
+/* TODO: Create CSS for your Twitter Mockup */
+.nav-bar {
+  /* We first create a flex layout context */
+  display: flex;
+
+  /* Then we define the flow direction */
+  /*flex-direction: row;*/
+  flex-flow: row wrap;
+
+  /* Then we define how is distributed the remaining space */
+  /*justify-content: space-between;*/
+
+  background: white;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  /* lab requirements */
+
+  /* Adding this to an element makes it stick to whatever position you specify */
+  position: fixed;
+  /* These are the positions for the fixed element that will keep the element fixed at the top */
+  top: 0;
+  left: 0;
+  /* Adding this to an element makes it positioned above other elements (You could probably make it 
+  work with z-index: 5, but we put 100 just to make sure). Elements without a specified z-index have 
+  a default z-index of 0. Elements with higher z-indexes are placed over elements with lower z-indexes. */
+  z-index: 100;
+}
+
+.nav-bar-buttons {
+  display: flex;
+  margin-left: 60px;
+}
+
+.flex-item {
+  background: none;
+  padding: 0px;
+  width: auto;
+  height: 65px;
+  margin-top: 0px;
+  margin-right: 50px;
+  margin-bottom: 0px;
+  line-height: 50px;
+  color: #67757f;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+  border: none;
+}
+
+.flex-item:hover {
+  color: #0091e3;
+  border-bottom: solid;
+  /*box-shadow: 0 2px 0 #0091e3;*/
+}
+
+.logo {
+  background: none;
+  justify-content: center;
+  position: absolute;
+  padding: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 50%;
+  border: none;
+}
+
+.tweet-btn {
+  background: #4fb5f4;
+  width: 115px;
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 25px;
+}
+
+.body {
+  display: flex;
+  margin-top: 70px;
+  border: black;
+  /*border-style: solid;*/
+
+  /* lab recommended */
+  /*
+  max-width: 1190px;
+  margin: 56px auto;
+  */
+}
+
+.profile {
+  background: white;
+  width: 400px;
+  height: 340px;
+  margin: 10px 5px 10px 50px;
+}
+
+.banner {
+  background: black;
+}
+
+.pfp {
+  background-color: white;
+  padding: 2.5px;
+  position: absolute;
+  margin-top: -45px;
+  margin-left: 25px;
+  border-radius: 50%;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-left: 150px;
+  font-size: large;
+  /*border: black;
+  border-style: solid;*/
+}
+
+.username {
+  /*font-weight: bold;
+  text-decoration: underline;*/
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.profile-categories {
+  display: flex;
+  justify-content: space-between;
+  width: 340px;
+  color: #67757f;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-header {
+  color: #67757f;
+  font-weight: bold;
+  font-size: large;
+  margin-bottom: 5px;
+}
+
+.profile-data {
+  color: #4bb4f4;
+  font-size: large;
+  font-weight: bold;
+}
+/*============================================================================================== */
+.screenreader-text {
+  position: absolute;
+  left: -999px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+}
+
+.screenreader-text:focus {
+  color: black;
+  display: inline-block;
+  height: auto;
+  width: auto;
+  position: static;
+  margin: auto;
+}
+
+a {
+  color: #1DA1F2;
+}
+
+@media only screen and (max-width: 1200px) {
+  /*
+  .container {
+    width: 1190px;
+  }
+  */
+
+  .right-col {
+    visibility: hidden;
+  }
+}
+/* Top Navbar elements' styles */
+.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.navbar-nav > li a {
+  color: #66757f;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.input-search {
+  font-size: 13px;
+}
+
+.input-search, .btn-search {
+  background-color: #f5f8fa;
+  border-radius: 21px;
+  border: 1px solid #e6ecf0;
+}
+.btn-search {
+  background-color: #fff;
+}
+
+.navbar-search-icon {
+  color: #66757f;
+}
+
+.btn-circle {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.btn-search-bar {
+  border-radius: 100px;
+  border: 1px solid #1da1f2;
+  color: #fff;
+  background-color: #4AB3F4;
+  border-color: transparent;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.btn-search-bar:hover{
+      background-color: #1DA1F2;
+    border-color: #1DA1F2;
+  cursor:pointer;
+}
+
+.navbar-form {
+  margin-right: 15px;
+}
+
+.navbar-user-dropdown {
+  margin-right: 15px;
+}
+/* END: Top Navbar elements' styles */
+
+.profile-background {
+  height: 320px;
+}
+
+.rm { display: none;}
+
+/* Main avatar */
+.avatar-container {
+  bottom: -87px;
+  left: 10px;
+  position: absolute;
+  transition: bottom .3s;
+  z-index: 3;
+}
+
+.avatar {
+  background: #fff;
+  background-size: cover;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  height: 200px;
+  position: relative;
+  width: 200px;
+}
+/* END: Main avatar */
+
+/* Stats Navbar elements' styles */
+.profile-stats {
+  background-color: #fff;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.profile-stats ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.profile-stats li {
+  display: inline-block;
+}
+
+.profile-stats a {
+  padding: 10px 16px;
+  display: block;
+  text-align: center;
+}
+
+.profile-stats-item {
+  color: #657786;
+  display: block;
+}
+
+.profile-stats-item-active {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-color: #1DA1F2 !important;
+}
+
+.profile-stats-item-label {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.profile-stats-item-number {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* END: Stats Navbar elements' styles */
+
+/* Main content elements' styles */
+
+/* Left column*/
+/*
+.profile-header {
+  margin-top: 35px;
+  padding-right: 15px;
+  padding-left: 15px;
+}*/
+
+.profile-element {
+  color: #657786;
+  display: block;
+  font-size: 14px;
+  margin-top: 12px;
+}
+.profile-fullname {
+  color: #000;
+}
+
+.profile-website {
+  color: #1DA1F2 !important;
+  cursor: pointer;
+}
+
+.profile-website:hover {
+  text-decoration: underline !important;
+}
+
+.tweet-to-btn {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  width:100%;
+}
+/* END: Left column*/
+
+/* Main column*/
+.main-content {
+}
+
+.tweet-list {
+  list-style: none;
+  margin: 8px 4px 0;
+  padding: 0;
+}
+.tweet-card {
+  background-color: #fff;
+  border-bottom: 1px solid #e6ecf0;
+  min-height: 51px;
+  padding: 9px 12px;
+
+  /*border: black;
+  border-style: solid;*/
+}
+
+.tweet-content {
+  margin-top: 10px;
+  margin-left: 58px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+}
+.tweet-card-avatar {
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+  float: left;
+  margin-top: -22px;
+  margin-left: -58px;
+}
+
+.WTF-tweet-card-avatar {
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+  float: left;
+  margin-left: -70px;
+}
+
+.tweet-text {
+  margin-top: -10px;
+}
+
+.tweet-footer-btn {
+  margin-right: 30px;
+}
+.tweet-footer-btn i, .tweet-footer-btn span {
+  color: #657786;
+  font-size: 16px;
+}
+.tweet-footer-btn span {
+  margin-left: 8px;
+}
+/* END Main column*/
+
+/* Right column*/
+.pic-col {
+  margin: 2px;
+  padding: 2px;
+}
+
+.right-col {
+  padding-left: 0;
+}
+.content-panel {
+  margin: 10px 0 0;
+  background-color: #fff;
+  line-height: 16px;
+  padding: 15px;
+}
+
+.content-panel h4 {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-size: larger;
+}
+
+.content-panel small {
+  font-size: 66%;
+  margin-left: 6px;
+}
+
+.content-panel li {
+  min-height: 70px;
+}
+
+.WTF-tweet-header {
+  margin-top: -10px;
+  margin-left: -10px;
+}
+
+.btn-follow {
+  border-color: #1DA1F2;
+  color: #1DA1F2;
+  background-color: #fff;
+  border: 1px solid #1da1f2;
+  display: block;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 4px 12px;
+  border-radius: 100px;
+  box-shadow: none;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  min-width: 89px;
+  margin-top: 10px;
+  margin-left: -10px;
+}
+
+.btn-follow:hover {
+  background-color: #E8F5FD;
+}
+
+/* END: Right column*/
+
+/* END: Main content elements' styles */

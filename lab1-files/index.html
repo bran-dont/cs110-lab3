@@ -1,0 +1,311 @@
+<!--
+    Name: Brandon Tran
+    Partner: Saad Umar
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Lab#1: Twitter mockup</title>
+  </head>
+  <body>
+    <!-- TODO: Create HTML elements for Twitter mockup inside body -->
+    <a id="skip-nav" class="screenreader-text" href="#main-content">Skip to main content</a>
+    <div class="nav-bar">
+      <div role="navigation">
+        <div class="nav-bar-buttons">
+          <button class="flex-item">Home</button>
+          <button class="flex-item">Moments</button> 
+          <button class="flex-item">Notifications</button>
+          <button class="flex-item">Messages</button>
+        </div>
+      </div>
+      <button class="logo"><img src="images/twitter-logo.png" alt="Twitter Logo" width="40" height="32.48"></button>
+      <button class="tweet-btn">Tweet</button>
+    </div> 
+
+    <div class="body">
+      <div class="profile">
+        <div class="banner">
+          <img style="margin: 50px 100px 50px 100px; margin-left: 45px;" src="images/ratatouille-banner.png" alt="Profile Banner Picture" width="315" height="50px">
+        </div>
+
+        <div>
+          <img class="pfp" src="images/ratatouille.jpg" alt="Profile Picture (its a ratatouille)" width="85" height="85">
+          <div class="user-info">
+            <b><u>Remy</u></b>
+            <p style="margin-top: 0px; margin-bottom: 0px; color: #888888;">@remy</p>
+          </div>
+        </div>
+
+        <div class="profile-categories">
+          <div class="profile-section">
+            <p class="profile-header"> Tweets </p>
+            <p class="profile-data">5049</p>
+          </div>
+
+          <div class="profile-section">
+            <p class="profile-header"> Following </p>
+            <p class="profile-data">324</p>
+          </div>
+
+          <div class="profile-section">
+            <p class="profile-header"> Followers </p>
+            <p class="profile-data">809</p>
+          </div>
+        </div>
+      </div>
+
+      <!---------------------------------------------------------------------------------------------------->
+      <!-- Center content column -->
+      <main id="#main-content">
+        <div role="main">
+          <ol class="tweet-list">
+            <li class="tweet-card">
+              <div class="tweet-content">
+                <div class="tweet-header">
+                  <span class="fullname">
+                    <strong>Remy</strong>
+                  </span>
+                  <span class="username">@remy</span>
+                  <span class="tweet-time"> Nov 19</span>
+                </div>
+                <a><img class="tweet-card-avatar" src="images/ratatouille.jpg" alt="Remy Profile Picture" width="48" height="48"></a>
+                <div class="tweet-text">
+                  <p class="" data-aria-label-part="0">I'm taking this class called CS 110 and the TAs are all so <b>cool</b>!</p>
+                </div>
+                <div class="tweet-footer">
+                  <a class="tweet-footer-btn">
+                    <i class="octicon octicon-comment" aria-hidden="true"></i><span></span>
+                  </a>
+                  <a class="tweet-footer-btn">
+                    <i class="octicon octicon-sync" aria-hidden="true"></i><span></span>
+                  </a>
+                  <a class="tweet-footer-btn">
+                    <i class="octicon octicon-heart" aria-hidden="true"></i><span></span>
+                  </a>
+                  <a class="tweet-footer-btn">
+                    <i class="octicon octicon-mail" aria-hidden="true"></i><span></span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            
+            <li class="tweet-card">
+              <div class="tweet-content">
+                <div class="tweet-header">
+                  <span class="fullname">
+                    <strong>Remy</strong>
+                  </span>
+                  <span class="username">@remy</span>
+                  <span class="tweet-time"> Nov 19</span>
+                </div>
+                <a>
+                  <img class="tweet-card-avatar" src="images/ratatouille.jpg" alt="Remy Profile Picture">
+                </a>
+                <div class="tweet-text">
+                  <p class="" data-aria-label-part="0">It's 2007. You just got home from elementary school. Your mom has pizza bagels in the oven. Ratatouille is in theaters. Life is good
+                  </p>
+                </div>
+                <div class="tweet-footer">
+                  <a class="tweet-footer-btn">
+                    <i class="octicon octicon-comment" aria-hidden="true"></i>
+                  </a>
+                  <a class="tweet-footer-btn">
+                    <i class="octicon octicon-sync" aria-hidden="true"></i>
+                  </a>
+                  <a class="tweet-footer-btn">
+                    <i class="octicon octicon-heart" aria-hidden="true"></i>
+                  </a>
+                  <a class="tweet-footer-btn">
+                    <i class="octicon octicon-mail" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </li>
+  
+            <li class="tweet-card">
+              <div class="tweet-content">
+                <div class="tweet-header">
+                  <span class="fullname">
+                    <strong>Remy</strong>
+                  </span>
+                  <span class="username">@remy</span>
+                  <span class="tweet-time"> Nov 19</span>
+                </div>
+                <a>
+                  <img class="tweet-card-avatar" src="images/ratatouille.jpg" alt="Remy Profile Picture">
+                </a>
+                <div class="tweet-text">
+                  <p class="" data-aria-label-part="0">Let's make some pasta!
+                  </p>
+                </div>
+                <div class="tweet-footer">
+                  <a class="tweet-footer-btn">
+                    <i class="octicon octicon-comment" aria-hidden="true"></i>
+                  </a>
+                  <a class="tweet-footer-btn">
+                    <i class="octicon octicon-sync" aria-hidden="true"></i>
+                  </a>
+                  <a class="tweet-footer-btn">
+                    <i class="octicon octicon-heart" aria-hidden="true"></i>
+                  </a>
+                  <a class="tweet-footer-btn">
+                    <i class="octicon octicon-mail" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </li>
+  
+            <li class="tweet-card">
+              <div class="tweet-content">
+                <div class="tweet-header">
+                  <span class="fullname">
+                    <strong>Remy</strong>
+                  </span>
+                  <span class="username">@remy</span>
+                  <span class="tweet-time"> Nov 19</span>
+                </div>
+                <a>
+                  <img class="tweet-card-avatar" src="images/ratatouille.jpg" alt="Remy Profile Picture">
+                </a>
+                <div class="tweet-text">
+                  <p class="" data-aria-label-part="0">Let's make some pasta!
+                  </p>
+                </div>
+                <div class="tweet-footer">
+                  <a class="tweet-footer-btn">
+                    <i class="octicon octicon-comment" aria-hidden="true"></i>
+                  </a>
+                  <a class="tweet-footer-btn">
+                    <i class="octicon octicon-sync" aria-hidden="true"></i>
+                  </a>
+                  <a class="tweet-footer-btn">
+                    <i class="octicon octicon-heart" aria-hidden="true"></i>
+                  </a>
+                  <a class="tweet-footer-btn">
+                    <i class="octicon octicon-mail" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </li>
+  
+            <li class="tweet-card">
+              <div class="tweet-content">
+                <div class="tweet-header">
+                  <span class="fullname">
+                    <strong>Remy</strong>
+                  </span>
+                  <span class="username">@remy</span>
+                  <span class="tweet-time"> Nov 19</span>
+                </div>
+                <a>
+                  <img class="tweet-card-avatar" src="images/ratatouille.jpg" alt="Remy Profile Picture">
+                </a>
+                <div class="tweet-text">
+                  <p class="" data-aria-label-part="0">Let's make some pasta!
+                  </p>
+                </div>
+                <div class="tweet-footer">
+                  <a class="tweet-footer-btn">
+                    <i class="octicon octicon-comment" aria-hidden="true"></i>
+                  </a>
+                  <a class="tweet-footer-btn">
+                    <i class="octicon octicon-sync" aria-hidden="true"></i>
+                  </a>
+                  <a class="tweet-footer-btn">
+                    <i class="octicon octicon-heart" aria-hidden="true"></i>
+                  </a>
+                  <a class="tweet-footer-btn">
+                    <i class="octicon octicon-mail" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </li>
+  
+            <li class="tweet-card">
+              <div class="tweet-content">
+                <div class="tweet-header">
+                  <span class="fullname">
+                    <strong>Remy</strong>
+                  </span>
+                  <span class="username">@remy</span>
+                  <span class="tweet-time"> Nov 19</span>
+                </div>
+                <a>
+                  <img class="tweet-card-avatar" src="images/ratatouille.jpg" alt="Remy Profile Picture">
+                </a>
+                <div class="tweet-text">
+                  <p class="" data-aria-label-part="0">test!
+                  </p>
+                </div>
+                <div class="tweet-footer">
+                  <a class="tweet-footer-btn">
+                    <i class="octicon octicon-comment" aria-hidden="true"></i>
+                  </a>
+                  <a class="tweet-footer-btn">
+                    <i class="octicon octicon-sync" aria-hidden="true"></i>
+                  </a>
+                  <a class="tweet-footer-btn">
+                    <i class="octicon octicon-heart" aria-hidden="true"></i>
+                  </a>
+                  <a class="tweet-footer-btn">
+                    <i class="octicon octicon-mail" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </li>
+            
+          </ol>
+        </div>
+      </main>
+      <!--role main-->
+      <!-- End: Center content column -->
+
+      <div class="col right-col">
+        <div class="content-panel">
+          <div class="panel-header">
+            <h1>Who to follow</h1>
+          </div>
+          <!-- Who to Follow panel -->
+          <div class="panel-content">
+            <!--Follow list -->
+            <ol class="tweet-list">
+              <li class="tweet-card">
+                <div class="tweet-content">
+                  <img class="WTF-tweet-card-avatar" src="images/linguini.png" alt="Linguini">
+                  <div class="WTF-tweet-header">
+                    <span class="fullname">
+                      <strong>Linguini</strong>
+                    </span>
+                    <span class="username">@linguini</span>
+                  </div>
+
+                  <button class="btn btn-follow">Follow</button>
+                </div>
+              </li>
+
+              <li class="tweet-card">
+                <div class="tweet-content">
+                  <img class="WTF-tweet-card-avatar" src="images/ratatouille.jpg" alt="Ratatouille">
+                  <div class="WTF-tweet-header">
+                    <span class="fullname">
+                      <strong>CS110  TA</strong>
+                    </span>
+                    <span class="username">@cs</span>
+                  </div>
+
+                  <button class="btn btn-follow">Follow</button>
+                </div>
+              </li>
+
+            </ol>
+            <!--END: Follow list -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
