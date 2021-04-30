@@ -1,12 +1,14 @@
+<!DOCTYPE html>
 <!--
-    Name: Brandon Tran
-    Partner: Saad Umar
+    Name: Brandon Tran and Jai Radhakrishnan
   -->
 
-<!DOCTYPE html>
+
 <html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" > </script>
+    <script src="main.js"></script>
     <title>Lab#1: Twitter mockup</title>
   </head>
   <body>
@@ -21,7 +23,7 @@
           <button class="flex-item">Messages</button>
         </div>
       </div>
-      <button class="logo"><img src="images/twitter-logo.png" alt="Twitter Logo" width="40" height="32.48"></button>
+      <input id="searchBar" type="search" placeholder="Search in tweets">
       <button class="tweet-btn">Tweet</button>
     </div> 
 
@@ -55,13 +57,16 @@
             <p class="profile-data">809</p>
           </div>
         </div>
+        <br>
+        <input type="checkbox" id="myCheck" name="pause" value="Pause" onchange="pauseAJAX(this);">
+        <label for="myCheck"> Pause AJAX</label><br>
       </div>
 
       <!---------------------------------------------------------------------------------------------------->
       <!-- Center content column -->
       <main id="#main-content">
         <div role="main">
-          <ol class="tweet-list">
+          <ol class="tweet-list" id="tweet-container">
             <li class="tweet-card">
               <div class="tweet-content">
                 <div class="tweet-header">

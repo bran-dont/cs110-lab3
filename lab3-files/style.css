@@ -1,6 +1,7 @@
 /*
   Name: Brandon Tran
-  Partner: Saad Umar
+  Partner: Saa
+    d Umar
 */
 
 /* Feel free to edit CSS of body if you'd like. We provide you the light gray background color and font family in the body styling */
@@ -68,7 +69,7 @@ body {
   /*box-shadow: 0 2px 0 #0091e3;*/
 }
 
-.logo {
+#searchBar {
   background: none;
   justify-content: center;
   position: absolute;
@@ -76,7 +77,6 @@ body {
   margin-top: 15px;
   margin-bottom: 15px;
   margin-left: 50%;
-  border: none;
 }
 
 .tweet-btn {
@@ -337,12 +337,6 @@ a {
 /* Main content elements' styles */
 
 /* Left column*/
-/*
-.profile-header {
-  margin-top: 35px;
-  padding-right: 15px;
-  padding-left: 15px;
-}*/
 
 .profile-element {
   color: #657786;
@@ -371,8 +365,6 @@ a {
 /* END: Left column*/
 
 /* Main column*/
-.main-content {
-}
 
 .tweet-list {
   list-style: none;
@@ -384,9 +376,6 @@ a {
   border-bottom: 1px solid #e6ecf0;
   min-height: 51px;
   padding: 9px 12px;
-
-  /*border: black;
-  border-style: solid;*/
 }
 
 .tweet-content {
